@@ -1,0 +1,35 @@
+<project name="004" default="dist" basedir=".">
+	<property name="src" location="."/>
+	<property name="build" location="bin"/>
+	<property name="dist" location="dist"/>
+	<target name="init">
+		<mkdir dir="${build}"/>
+		<mkdir dir="${dist}"/>
+	</target>
+	<target name="compile" depends="init">
+		<javac srcdir="${src}" destdir="${build}"/>
+	</target>
+	<target name="dist" depends="compile">
+		<jar jarfile="${dist}/classes.jar" basedir="${build}">
+		</jar>
+	</target>
+	<target name="clean">
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+	</target>
+	<target name="Test1" depends="compile">
+	    <java classpath="${build}" classname="edu.cqu.Test1"/>
+	</target>
+	<target name="Test2" depends="compile">
+	    <java classpath="${build}" classname="edu.cqu.Test2"/>
+	</target>
+	<target name="Test3" depends="compile">
+	    <java classpath="${build}" classname="edu.cqu.Test3"/>
+	</target>
+	<target name="Test4" depends="compile">
+	    <java classpath="${build}" classname="edu.cqu.Test4"/>
+	</target>
+	<target name="Test5" depends="compile">
+	    <java classpath="${build}" classname="edu.cqu.Test5"/>
+	</target>
+</project>
