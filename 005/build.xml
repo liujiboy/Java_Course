@@ -1,0 +1,23 @@
+<project name="005" default="dist" basedir=".">
+	<property name="src" location="."/>
+	<property name="build" location="bin"/>
+	<property name="dist" location="dist"/>
+	<target name="init">
+		<mkdir dir="${build}"/>
+		<mkdir dir="${dist}"/>
+	</target>
+	<target name="compile" depends="init">
+		<javac srcdir="${src}" destdir="${build}"/>
+	</target>
+	<target name="dist" depends="compile">
+		<jar jarfile="${dist}/classes.jar" basedir="${build}">
+		</jar>
+	</target>
+	<target name="clean">
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+	</target>
+	<target name="Triangle" depends="compile">
+	    <java classpath="${build}" classname="edu.cqu.Triangle"/>
+	</target>
+</project>

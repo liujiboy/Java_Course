@@ -7,6 +7,12 @@ public class Point {
 	public double getX() {
 		return x;
 	}
+	public double distance( Point b) {
+		double xx=Math.pow(this.x-b.x,2);
+		double yy=Math.pow(this.y-b.y,2);
+		double zz=Math.pow(this.z-b.z,2);
+		return Math.sqrt(xx+yy+zz);
+	}
 	public void setX(double x) {
 		this.x = x;
 	}
@@ -51,6 +57,12 @@ public class Point {
 		if (Double.doubleToLongBits(z) != Double.doubleToLongBits(other.z))
 			return false;
 		return true;
+	}
+	public Point(double x, double y, double z) {
+		super();
+		this.x = x;
+		this.y = y;
+		this.z = z;
 	}
 	
 }
