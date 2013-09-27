@@ -1,36 +1,32 @@
 package cqu;
 
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URL;
 
-public class FileCopy implements Copy {
+public class WebPageCopy implements Copy{
 	private String src;
 	private String dest;
-	public FileCopy(String src, String dest) {
+	public WebPageCopy(String src, String dest) {
 		
 		this.src = src;
 		this.dest = dest;
 	}
-	
 
-	public boolean doCopy()
-	{
+	public boolean doCopy() {
 		try {
-			InputStream in=new FileInputStream(src);
-			OutputStream out=new FileOutputStream(dest);
+			URL url = new URL(src);
+			OutputStream out = new FileOutputStream(dest);
+			InputStream in = url.openStream();
 			IOOperation.copy(in, out);
 			in.close();
 			out.close();
 			return true;
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return false;
 		}
-		
 	}
-	
 }
