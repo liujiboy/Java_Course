@@ -1,0 +1,3 @@
+Models and model elements, have reports associated with them. A report extracts information about models and model elements from a tool. A report presents an artifact or a set of artifacts. Most artifacts have guidelines, which describes the artifact in more detail.
+
+To make the development of a complete software system manageable, the artifacts are organized into sets corresponding to the disciplines. Several artifacts are used in a number of disciplines; for example, the Risk List, the Software Architecture Document, and the Iteration Plan. These kinds of artifacts belong to the artifact set where they are primarily produced. 
