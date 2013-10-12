@@ -52,7 +52,7 @@ public class LearningMachine {
 				words.add(str);
 			}
 		}
-		int K=2;//前缀长度取2
+		int K=1;//前缀长度取1
 		for(int i=0;i+K<words.size();i++)
 		{
 			Prefix prefix=new Prefix(words.subList(i, i+K));
