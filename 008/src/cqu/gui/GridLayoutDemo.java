@@ -1,4 +1,4 @@
-package cqu;
+package cqu.gui;
 
 import java.awt.GridLayout;
 

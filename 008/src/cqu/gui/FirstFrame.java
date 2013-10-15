@@ -1,4 +1,4 @@
-package cqu;
+package cqu.gui;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
