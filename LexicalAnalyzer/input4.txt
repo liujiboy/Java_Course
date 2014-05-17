@@ -1,0 +1,6 @@
+int  abc
+int b
+int c
+abc=10+b
+b=1+abc
+c=4+b

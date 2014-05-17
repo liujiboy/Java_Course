@@ -1,0 +1,11 @@
+int i=100;
+while(i<=999)
+{
+   int a=i/100;
+   int b=i/10%10;
+   int c=i%10;
+   if(a^3+b^3+c^3==i)
+     print(i+"是水仙花数");
+   else
+     print(i+"不是水仙花数");
+}
