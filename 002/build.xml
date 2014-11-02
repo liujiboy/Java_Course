@@ -7,7 +7,7 @@
 		<mkdir dir="${dist}"/>
 	</target>
 	<target name="compile" depends="init">
-		<javac srcdir="${src}" destdir="${build}"/>
+		<javac source="1.7" target="1.7" srcdir="${src}" destdir="${build}"/>
 	</target>
 	<target name="dist" depends="compile">
 		<jar jarfile="${dist}/classes.jar" manifest="${src}/manifest" basedir="${build}">
