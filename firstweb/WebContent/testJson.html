@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#bt").click(function(){
+		$.post("json",{name:'abc',age:10},function(result){
+			$("#msg").html(result);
+		});
+		
+	});
+});
+</script>
+</head>
+<body>
+<input id="bt" type="button" value="点击">
+<span id="msg"></span>
+</body>
+</html>
