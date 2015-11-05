@@ -1,33 +1,30 @@
 package cqu.gui;
-
 import java.awt.BorderLayout;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
-
-public class BorderLayoutDemo extends JFrame{
-
-	private static final long serialVersionUID = 1326775352586027025L;
-	private JButton north=new JButton("north");
-	private JButton south=new JButton("south");
-	private JButton east=new JButton("east");
-	private JButton west=new JButton("west");
-	private JButton center=new JButton("center");
-	public BorderLayoutDemo()
-	{
+public class BorderLayoutDemo extends JFrame {
+	private JButton north = new JButton("北");
+	private JButton south = new JButton("南");
+	private JButton east = new JButton("东");
+	private JButton west = new JButton("西");
+	private JButton center = new JButton("中");
+	public BorderLayoutDemo() {
+		setSize(300, 300);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//设置布局方式为BorderLayout
 		setLayout(new BorderLayout());
+		//添加按键，注意设置布局方式之后任何对
+		//组件进行设置的方法，例如setSize、
+		//setLocation等都会失效
 		add(north,BorderLayout.NORTH);
 		add(south,BorderLayout.SOUTH);
 		add(east,BorderLayout.EAST);
 		add(west,BorderLayout.WEST);
 		add(center,BorderLayout.CENTER);
 	}
-	public static void main(String[] args) {
-		BorderLayoutDemo demo=new BorderLayoutDemo();
-		demo.setSize(400, 400);
-		demo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		demo.setVisible(true);
+	public static void main(String arg[]) {
+		BorderLayoutDemo frame = new BorderLayoutDemo();
+		frame.setVisible(true);
 	}
-
-
 }

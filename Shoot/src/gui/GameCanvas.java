@@ -1,33 +1,17 @@
+package gui;
 
-
-import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import javax.swing.WindowConstants;
-import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 import model.Game;
 
-public class NewJPanel extends javax.swing.JPanel {
-	Game game=new Game();
-	/**
-	* Auto-generated main method to display this 
-	* JPanel inside a new JFrame.
-	*/
-	public static void main(String[] args) {
-		JFrame frame = new JFrame();
-		frame.setSize(400,700);
-		frame.getContentPane().add(new NewJPanel());
-		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		frame.pack();
-		frame.setVisible(true);
-	}
-	
-	public NewJPanel() {
-		super();
-		initGUI();
+public class GameCanvas extends JPanel {
+	private Game game=new Game();
+	public GameCanvas()
+	{
 		this.addKeyListener(new KeyListener(){
 
 			@Override
@@ -67,19 +51,10 @@ public class NewJPanel extends javax.swing.JPanel {
 		this.requestFocus();
 		game.start();
 	}
-	
-	private void initGUI() {
-		try {
-			setPreferredSize(new Dimension(400, 700));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 	public void paint(Graphics g)
 	{
 		super.paint(g);
 		game.draw(g);
 		repaint(10);
 	}
-
 }
