@@ -65,7 +65,6 @@ public class LSystem {
 	{
 		LSystem l=new LSystem();
 		l.iterate();
-		l.iterate();
 		System.out.println(l.state);
 		BufferedImage image=l.draw(500, 500);
 		try {
