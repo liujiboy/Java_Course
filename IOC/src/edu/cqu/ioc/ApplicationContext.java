@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import edu.cqu.ioc.annotation.Autowired;
 import edu.cqu.ioc.annotation.Bean;
 import edu.cqu.ioc.annotation.Component;
 import edu.cqu.ioc.annotation.ComponentScan;

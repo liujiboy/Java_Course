@@ -16,6 +16,10 @@ public class Application {
             }
         };
     }
+    @Bean
+    StringBuffer buffer() {
+    		return new StringBuffer();
+    }
 
   public static void main(String[] args) {
       ApplicationContext context = 

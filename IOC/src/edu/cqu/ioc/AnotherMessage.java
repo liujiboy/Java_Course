@@ -1,5 +1,6 @@
 package edu.cqu.ioc;
 
+import edu.cqu.ioc.annotation.Autowired;
 import edu.cqu.ioc.annotation.Component;
 
 @Component
