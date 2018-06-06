@@ -110,8 +110,8 @@ public class BookServlet extends HttpServlet {
 		String id = request.getParameter("id");
 		Book book = BookDao.get(id);
 		File file = new File(imageDir, book.image);
-		if (file.delete())
-			BookDao.delete(id);
+		file.delete();
+		BookDao.delete(id);
 		response.sendRedirect("book?op=list");
 
 	}

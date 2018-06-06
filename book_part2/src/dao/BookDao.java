@@ -21,7 +21,7 @@ public class BookDao {
 			@Override
 			protected Boolean doTransaction(Connection conn) throws Exception {
 				PreparedStatement ps = conn
-						.prepareStatement("insert into book values(?,?,?,?,?)");
+						.prepareStatement("insert into book(id,name,price,des,image) values(?,?,?,?,?)");
 				ps.setString(1, book.id);
 				ps.setString(2, book.name);
 				ps.setDouble(3, book.price);
