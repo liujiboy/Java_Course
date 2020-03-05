@@ -14,7 +14,7 @@ public class BookDao {
 	private static final String driverClass="com.mysql.jdbc.Driver";
 	private static final String jdbcURL="jdbc:mysql://localhost/book?useUnicode=true&characterEncoding=UTF-8";
 	private static final String user="root";
-	private static final String pwd="";
+	private static final String pwd="root";
 	//获取数据库连接
 	public static Connection getConnection() throws Exception
 	{
@@ -28,7 +28,7 @@ public class BookDao {
 		Connection conn=getConnection();
 		conn.setAutoCommit(false);
 		try{
-			PreparedStatement ps=conn.prepareStatement("insert into book values(?,?,?,?,?)");
+			PreparedStatement ps=conn.prepareStatement("insert into book(id,name,price,des,image) values(?,?,?,?,?)");
 			ps.setString(1,book.id);
 			ps.setString(2, book.name);
 			ps.setDouble(3, book.price);
