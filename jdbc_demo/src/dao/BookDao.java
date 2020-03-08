@@ -9,7 +9,8 @@ import java.util.List;
 
 import domain.Book;
 
-
+//Data Access Object
+//CRUD，Create Read Update Delete
 public class BookDao {
 	private static final String driverClass="com.mysql.jdbc.Driver";
 	private static final String jdbcURL="jdbc:mysql://localhost/book?useUnicode=true&characterEncoding=UTF-8";
@@ -26,7 +27,7 @@ public class BookDao {
 	public static Boolean add(final Book book)throws Exception
 	{
 		Connection conn=getConnection();
-		conn.setAutoCommit(false);
+		conn.setAutoCommit(false);//开启了事务操作
 		try{
 			PreparedStatement ps=conn.prepareStatement("insert into book(id,name,price,des,image) values(?,?,?,?,?)");
 			ps.setString(1,book.id);
