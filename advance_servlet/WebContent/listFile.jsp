@@ -14,11 +14,14 @@
 	File dir=new File("/Users/liuji/upload");
 	for(File file:dir.listFiles())
 	{
+		if(file.isFile()&&!file.getName().startsWith("."))
+		{
 %>
 <pre>
 <%=file.getName() %>  <a href="download?path=<%=URLEncoder.encode(file.getAbsolutePath(),"UTF-8")%>">下载</a>
 </pre>
 <%
+		}
 	}
 %>
 </body>

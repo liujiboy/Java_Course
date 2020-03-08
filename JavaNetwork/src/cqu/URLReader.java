@@ -7,7 +7,7 @@ import java.net.URL;
 public class URLReader {
     public static void main(String[] args) throws Exception {
 		URL cqu = new URL("http://www.cqu.edu.cn/");
-		BufferedReader in = new BufferedReader(new InputStreamReader(cqu.openStream(),"GBK"));
+		BufferedReader in = new BufferedReader(new InputStreamReader(cqu.openStream(),"utf-8"));
 		String inputLine;
 		while ((inputLine = in.readLine()) != null)
 	    		System.out.println(inputLine);
