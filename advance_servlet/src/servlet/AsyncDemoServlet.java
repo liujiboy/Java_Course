@@ -16,7 +16,7 @@ public class AsyncDemoServlet extends HttpServlet {
 
 	@Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		resp.setCharacterEncoding("UTF-8");
+		resp.setContentType("text/html;charset=UTF-8");
         PrintWriter out = resp.getWriter();
         out.println( "进入Servlet的时间：" + new Date() + ".<br>" );
         out.flush();
