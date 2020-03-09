@@ -14,7 +14,7 @@ public class HibernateUtil {
 
 	    static {
 	    	
-	    	//获取heibernate.properties或heibernate.cfg.xml的配置信息
+	    	//获取hibernate.properties或hibernate.cfg.xml的配置信息
 	    	final Configuration configuration = new Configuration();
 			configuration.addAnnotatedClass( College.class );
 			configuration.addAnnotatedClass( Student.class );
