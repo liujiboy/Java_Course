@@ -1,4 +1,4 @@
-package edu.cqu;
+package edu.cqu.v2;
 
 public class Human {
 

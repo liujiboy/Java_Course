@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="camera" class="edu.cqu.v3.Camera"></bean>
+	<bean id="disk" class="edu.cqu.v3.Disk"></bean>
+	<bean id="mp3" class="edu.cqu.v3.MP3"></bean>
+	<bean id="scanner" class="edu.cqu.v3.Scanner"></bean>
+	<bean id="computer" class="edu.cqu.v3.Computer">
+		<property name="usb" ref-bean="mp3"></property>
+	</bean>
+	<!-- 
+		以上配置相当于
+		edu.cqu.v3.Camera camera=new edu.cqu.v3.Camera();
+		edu.cqu.v3.Disk disk=new edu.cqu.v3.Disk();
+		edu.cqu.v3.MP3 mp3=new edu.cqu.v3.MP3();
+		edu.cqu.v3.Scanner scanner=new edu.cqu.v3.Scanner();
+		edu.cqu.v3.Computer computer=new edu.cqu.v3.Computer();
+		computer.usb=mp3;
+	 -->
+</beans>

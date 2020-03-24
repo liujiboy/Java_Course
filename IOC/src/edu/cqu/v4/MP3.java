@@ -1,5 +1,8 @@
-package edu.cqu;
+package edu.cqu.v4;
 
+import edu.cqu.v4.annotation.Component;
+
+@Component(name="mp3")
 public class MP3 implements USB{
 
 	@Override
