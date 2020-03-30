@@ -1,4 +1,4 @@
-package edu.cqu.ioc;
+package edu.cqu.spring.ioc;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -7,12 +7,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import edu.cqu.ioc.annotation.Autowired;
-import edu.cqu.ioc.annotation.Bean;
-import edu.cqu.ioc.annotation.Component;
-import edu.cqu.ioc.annotation.ComponentScan;
-import edu.cqu.ioc.annotation.Configuration;
-import edu.cqu.ioc.utils.ClassTool;
+import edu.cqu.spring.ioc.annotation.Autowired;
+import edu.cqu.spring.ioc.annotation.Bean;
+import edu.cqu.spring.ioc.annotation.Component;
+import edu.cqu.spring.ioc.annotation.ComponentScan;
+import edu.cqu.spring.ioc.annotation.Configuration;
+import edu.cqu.spring.ioc.utils.ClassTool;
 
 public class ApplicationContext {
 	private Map<Class<?>, Object> map = new HashMap<>();

@@ -5,7 +5,7 @@
 	<bean id="mp3" class="edu.cqu.v3.MP3"></bean>
 	<bean id="scanner" class="edu.cqu.v3.Scanner"></bean>
 	<bean id="computer" class="edu.cqu.v3.Computer">
-		<property name="usb" ref-bean="mp3"></property>
+		<property name="usb" ref-bean="disk"></property>
 	</bean>
 	<!-- 
 		以上配置相当于

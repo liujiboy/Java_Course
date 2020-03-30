@@ -1,7 +1,7 @@
-package edu.cqu.ioc;
+package edu.cqu.spring.ioc;
 
-import edu.cqu.ioc.annotation.Autowired;
-import edu.cqu.ioc.annotation.Component;
+import edu.cqu.spring.ioc.annotation.Autowired;
+import edu.cqu.spring.ioc.annotation.Component;
 
 @Component
 public class MessagePrinter {

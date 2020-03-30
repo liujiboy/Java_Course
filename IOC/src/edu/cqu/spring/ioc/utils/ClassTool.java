@@ -1,4 +1,4 @@
-package edu.cqu.ioc.utils;
+package edu.cqu.spring.ioc.utils;
 
 import java.io.File;
 import java.io.FileFilter;

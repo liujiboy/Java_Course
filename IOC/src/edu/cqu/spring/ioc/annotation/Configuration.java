@@ -1,4 +1,4 @@
-package edu.cqu.ioc.annotation;
+package edu.cqu.spring.ioc.annotation;
 
 
 import java.lang.annotation.ElementType;
@@ -8,6 +8,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface ComponentScan {
-	String[] value() default {};
+public @interface Configuration {
+
 }

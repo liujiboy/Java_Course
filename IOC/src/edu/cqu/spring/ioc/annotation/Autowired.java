@@ -1,4 +1,4 @@
-package edu.cqu.ioc.annotation;
+package edu.cqu.spring.ioc.annotation;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;

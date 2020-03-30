@@ -5,7 +5,7 @@ import edu.cqu.v4.annotation.Component;
 
 @Component(name="computer")
 public class Computer {
-	@Autowired(name="scanner")
+	@Autowired(name="mp3")
 	private USB usb;
 	public void readFromUSB()
 	{

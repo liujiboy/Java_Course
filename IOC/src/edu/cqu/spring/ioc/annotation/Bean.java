@@ -1,4 +1,4 @@
-package edu.cqu.ioc.annotation;
+package edu.cqu.spring.ioc.annotation;
 
 import  java.lang.annotation.ElementType;
 
