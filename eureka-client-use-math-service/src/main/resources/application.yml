@@ -1,0 +1,14 @@
+spring:
+   application:
+      name: use-math-service
+server:
+   port:   7777
+      
+eureka:
+   server:
+      hostname:   localhost
+      port:   9999
+   client:
+      service-url:
+         defaultZone: http://${eureka.server.hostname}:${eureka.server.port}/eureka
+   
