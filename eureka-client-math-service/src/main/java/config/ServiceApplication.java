@@ -6,9 +6,9 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages= {"controller"})
-public class Application {
+public class ServiceApplication {
 
 	public static void main(String[] args) { 
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(ServiceApplication.class, args);
 	}
 }

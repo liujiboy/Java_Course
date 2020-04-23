@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @ComponentScan(basePackages= {"client","controller"})
 @EnableFeignClients(basePackages= {"client"})
-public class Application {
+public class UseServiceApplication {
 	@Bean
 	@LoadBalanced
 	public RestTemplate restTemplate() {
@@ -19,6 +19,6 @@ public class Application {
 	}
 
 	public static void main(String[] args) { 
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(UseServiceApplication.class, args);
 	}
 }
