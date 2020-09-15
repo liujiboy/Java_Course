@@ -8,6 +8,15 @@ public class Triangle {
 	private double ab;
 	private double ac;
 	private double bc;
+	public double getAb() {
+		return ab;
+	}
+	public double getAc() {
+		return ac;
+	}
+	public double getBc() {
+		return bc;
+	}
 	public Point getA() {
 		return a;
 	}
@@ -100,7 +109,7 @@ public class Triangle {
 	{
 		
 		try{
-			Point p1=new Point(0.0,0.0,0.0);
+			Point p1=new Point(0.0,1.0,0.0);
 			Point p2=new Point(1.0,0.0,0.0);
 			Point p3=new Point(2.0,0.0,0.0);
 			Triangle t = new Triangle(p1,p2,p3);
