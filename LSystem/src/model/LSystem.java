@@ -109,11 +109,14 @@ public class LSystem {
 				path.moveTo(t.getX(), t.getY());
 			}
 		}
-		AffineTransform at=new AffineTransform();
-		//at.scale(width/path.getBounds2D().getWidth(),height/path.getBounds2D().getHeight());
-		//at.translate(-path.getBounds2D().getX(), -path.getBounds2D().getY());
-		at.translate(-path.getBounds2D().getX()+(width-path.getBounds2D().getWidth())/2, -path.getBounds2D().getY()+(height-path.getBounds2D().getHeight())/2);
-		path.transform(at);
+		AffineTransform scaleTrans=new AffineTransform();
+		scaleTrans.scale(width/path.getBounds2D().getWidth()*0.9,height/path.getBounds2D().getHeight()*0.9);
+		path.transform(scaleTrans);
+		
+		AffineTransform translateTrans=new AffineTransform();
+		translateTrans.translate(-path.getBounds2D().getX()+(width-path.getBounds2D().getWidth())/2, -path.getBounds2D().getY()+(height-path.getBounds2D().getHeight())/2);
+		path.transform(translateTrans);
+
 		g2.draw(path);
 		return image;
 	}
