@@ -10,10 +10,10 @@ import client.MathServiceFeignClient;
 public class FeignTestController {
 	@Autowired
 	private MathServiceFeignClient client;
-	@GetMapping("/add/30/40")
-	public double add()
+	@GetMapping("/fadd")
+	public double add(int a,int b)
 	{
-		return client.add(30, 40);
+		return client.add(a, b);
 	}
 	
 }

@@ -10,9 +10,9 @@ import client.MathServiceRestClient;
 public class RestTestController {
 	@Autowired
 	private MathServiceRestClient client;
-	@GetMapping("/add/10/20")
-	public double add()
+	@GetMapping("/add")
+	public double add(int a,int b)
 	{
-		return client.add(10, 20);
+		return client.add(a,b);
 	}
 }
