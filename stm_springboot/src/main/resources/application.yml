@@ -1,0 +1,11 @@
+server:
+  port: 8080 # 设置服务的端口
+  servlet:
+    context-path: /stm # 设置web程序的context path
+spring:
+  # 设置数据库连接
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/stm?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456

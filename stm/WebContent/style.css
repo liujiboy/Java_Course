@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+TD.data {
+	BACKGROUND-COLOR: #eeeee0;
+	BORDER-BOTTOM: #cccc99 1px solid;
+	BORDER-LEFT: #ffffff 1px solid;
+	BORDER-RIGHT: #cccc99 1px solid;
+	BORDER-TOP: #ffffff 1px solid;
+	HEIGHT: 23px
+}
+TD.title {
+	BACKGROUND-COLOR: #3988E4;
+	BORDER-BOTTOM: #000033 1px solid;
+	BORDER-LEFT: #669999 1px solid;
+	BORDER-RIGHT: #000033 1px solid;
+	BORDER-TOP: #669999 1px solid;
+	COLOR: #ffffff;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 10px;
+	PADDING-RIGHT: 10px;
+	PADDING-TOP: 0px
+}
+TD.header {
+	BACKGROUND-COLOR: #ffffff;
+	BORDER-BOTTOM: #cccccc 1px solid;
+	BORDER-LEFT: #ffffff 1px solid;
+	BORDER-RIGHT: #cccccc 1px solid;
+	BORDER-TOP: #ffffff 1px solid;
+	HEIGHT: 23px
+}
+TD {
+	FONT-FAMILY: 宋体, Verdana, Helvetica, sans-serif;
+	FONT-SIZE: 12px
+}
+body {
+	background-color: #eeeeee;
+	SCROLLBAR-FACE-COLOR: #dce0e2;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #687888;
+	SCROLLBAR-3DLIGHT-COLOR: #687888;
+	SCROLLBAR-ARROW-COLOR: #6e7e88;
+	SCROLLBAR-TRACK-COLOR: #bcbfc0;
+	SCROLLBAR-DARKSHADOW-COLOR: #dce0e2;
+	FONT-SIZE: 12px
+}
+A:link {
+	COLOR: blue;
+	TEXT-DECORATION: none
+}
+
+A:visited {
+	COLOR: blue;
+	TEXT-DECORATION: none
+}
+
+A:hover {
+	COLOR: blue;
+	TEXT-DECORATION: none
+}
